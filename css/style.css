@@ -5,7 +5,9 @@
     outline: none;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 a{
     text-decoration: none;
@@ -14,6 +16,7 @@ a{
     display: flex;
     align-items: center;
     padding: 20px 70px 0 32px;
+    margin-bottom: 30px;
 }
 .menu-button{
     display: flex;
@@ -50,6 +53,7 @@ a{
     background-color: #EBEBEB;
 }
 .input-search{
+    width: 100%;
     padding: 12px 23px;
     background-color: transparent;
     border: none;
@@ -82,12 +86,56 @@ a{
 }
 .user{
     margin-left: 45px;
-    width: 40px;
-    height: 40px;
-    border-radius: 500%;
-
-    overflow: hidden;
 }
 .user-avatar{
     width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.side-bar{
+    padding-left: 32px;
+}
+.nav-menu{
+    margin-top: 0;
+    margin-bottom: 60px;
+    padding: 0;
+    list-style-type: none;
+}
+.nav-item .icon{
+    fill: #898989;
+}
+.nav-item:not(last-child){
+    margin-bottom: 28px;
+}
+.nav-link>svg{
+    margin-right: 13px;
+}
+.nav-text{
+    font-size: 16px;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    color: #898989;
+}
+.nav-link:hover{
+    color: #f00;
+}
+.nav-link:hover .icon{
+    fill: #f00;
+}
+.nav-image{
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.subs{
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+}
+.nav-menu:last-child:not(.nav > .nav-menu){
+    margin-top: 104px;
 }
